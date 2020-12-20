@@ -1,6 +1,7 @@
 #include "catch_amalgamated.hpp"
 #include "580A.h"
 #include "996A.h"
+#include "189A.h"
 #include <vector>
 
 /*
@@ -19,6 +20,7 @@ TEST_CASE("580A", "[580A]"){
 }
 */
 
+/*
 TEST_CASE("996A", "[996A]"){
     int input;
     input = 125;
@@ -27,4 +29,19 @@ TEST_CASE("996A", "[996A]"){
     REQUIRE(f996A(input) == 5);
     input = 1000000000;
     REQUIRE(f996A(input) == 10000000);
+}
+*/
+
+TEST_CASE("189A", "[189A]"){
+    int n, a, b, c;
+    n = 5;
+    a = 5;
+    b = 3;
+    c = 2;
+    REQUIRE(f189A(n, a, b, c) == 2);
+    n = 7;
+    a = 5;
+    b = 5;
+    c = 2;
+    REQUIRE(f189A(n, a, b, c) == 3);
 }
