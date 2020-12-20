@@ -38,31 +38,6 @@ int f996A(int input){
 }
 */
 
-/*
-int f996A_recursive(int input, std::vector<int> & coins, std::vector<int> & dp){
-    //Base
-    if(input == 0){
-	return 0;
-    }
-    //Recursive
-    else{
-	int original = input;
-	int min = 99999;
-	int temp;
-	for(int i = 0; i < coins.size(); i++){
-	    input = original;
-	    if(input - coins[i] >= 0){
-		temp = f996A_recursive(input - coins[i], coins, dp);
-		if(min > temp){
-		    min = temp;
-		}
-	    }
-	}
-	return 1 + min;
-    }
-}
-*/
-
 int f996A_recursive(int input, std::vector<int> & coins, std::vector<int> & dp){
     //Base
     if(input == 0){
